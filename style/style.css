@@ -1,0 +1,278 @@
+/* Header */
+header {
+  background-color: var(--accent);
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+nav ul li a {
+  padding: 10px 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  color: var(--muted);
+}
+.header .logo a img {
+  width: 100px;
+}
+
+.bars {
+  font-size: 24px;
+  display: none;
+}
+/* Header End */
+/* Hero */
+
+.hero {
+  height: 100vh;
+  background: url("../image/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.hero-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-img img {
+  width: 80%;
+  border-radius: 50%;
+  border: 5px solid var(--accent);
+}
+
+/* Hero End */
+
+/* About */
+.about{
+    background-color: var(--muted);
+}
+.about .about-img img {
+  width: 80%;
+  filter: box-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+.about-content p{
+    text-align: justify;
+}
+
+/* About End */
+
+/* Services */
+
+.service-card {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.service-card .icon i {
+  font-size: 40px;
+  color: #0d6efd;
+}
+
+.service-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+/* Services End */
+
+/* Skills */
+.skills h2 {
+  font-weight: 700;
+}
+
+.skill-card {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.skill-card i {
+  font-size: 42px;
+  color: #0d6efd;
+  margin-bottom: 12px;
+}
+
+.skill-card h5 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}
+/* Skills End */
+
+/* Work Experience */
+
+.work-line {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid #0d6efd20;
+}
+
+.work-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.work-item .dot {
+  position: absolute;
+  left: -9px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: #0d6efd;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #0d6efd25;
+}
+
+.work-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  transition: 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.work-card h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.work-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+/* Work Experience End */
+
+.footer {
+  background: #ffffff;
+  border-top: 1px solid #e6e6e6;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer-nav a {
+  color: #555;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #0d6efd;
+}
+
+.footer-social a {
+  font-size: 22px;
+  margin-right: 14px;
+  color: #0d6efd;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #084298;
+}
+
+.copyright-text {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .header {
+    align-items: flex-start;
+  }
+
+  nav {
+    position: absolute;
+    top: 3rem;
+    left: -100%;
+    background-color: #90d8fa;
+    padding: 2rem !important;
+    z-index: 1;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  nav.open {
+    left: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bars {
+    display: block;
+  }
+  .hero {
+    height: 80vh;
+  }
+}

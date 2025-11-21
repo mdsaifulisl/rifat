@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Typography */
+
+:root {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Inter', serif;
+  --font-mono: 'Inter', monospace;
+
+  --text: #e6eef8;
+  --muted: #94a3b8;
+  --accent: #7dd3fc;
+
+  --base-size: 16px;
+  --line: 1.5;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--base-size);
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: var(--line);
+  color: var(--text);
+  margin: 0;
+  background-color: var(--muted);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 0.6em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+h3 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.05rem;
+}
+h6 {
+  font-size: 0.95rem;
+}
+
+/* Paragraphs */
+p {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+/* Links */
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* a:hover {
+  text-decoration: underline;
+} */
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Inline code */
+code {
+  font-family: var(--font-mono);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Blockquote */
+blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Small text */
+small {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+/* Button */
+section{
+  overflow: hidden;
+}
+.accent{
+  color: var(--accent);
+}
