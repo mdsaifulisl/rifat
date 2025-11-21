@@ -1,4 +1,10 @@
-# Personal Portfolio Website
+# Assignment 03 - Personal Portfolio Website
+
+**Name:** Md. Saiful Islam  
+**Email:** saiful01741899@gmail.com  
+**Live URL:** [https://mdsaifulisl.github.io/rifat/](https://mdsaifulisl.github.io/rifat/)
+
+---
 
 This project is a personal portfolio site built to showcase my skills, work experience, and contact information. It includes a hero area, about section, services, skills, portfolio work, and a contact form.
 
